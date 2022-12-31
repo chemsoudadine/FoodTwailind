@@ -4,7 +4,8 @@
   "description": "Using Tailwind CSS",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build -i src/styles.css -o public/styles.css -w"
+    "build-css": "tailwindcss build -i src/styles.css -o public/styles.css -w",
+    "build-css2": "tailwindcss build -c tailwindcss-config.js -i src/styles.css -o public/output.css -w"
   },
   "repository": {
     "type": "git",
