@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build-css": "tailwindcss build -i src/styles.css -o public/styles.css -w",
-    "build-css2": "tailwindcss build -c tailwindcss-config.js -i src/styles.css -o public/output.css -w"
+    "build-css2": "tailwindcss build -c tailwindcss-config.js -i src/styles.css -o public/output.css -w",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,8 +19,11 @@
   "bugs": {
     "url": "https://github.com/chemsoudadine/FoodTwailind/issues"
   },
-  "homepage": "https://github.com/chemsoudadine/FoodTwailind#readme",
+  "homepage": "http://chemsoudadine.github.io/FoodTwailind",  // "https://github.com/chemsoudadine/FoodTwailind#readme"
   "dependencies": {
     "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
